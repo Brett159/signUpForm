@@ -2,27 +2,29 @@
 <form actions ='/signUp' method="post" id="signUp">
     <p>
         <h3>First Name:</h3>
-    <input id="firstName" placeholder="Type First Name Here..."></input>
+    <input class="signUpInput" placeholder="Type First Name Here..."required></input>
     </p>
     <p>
         <h3>Last Name:</h3>
-    <input class="lastName" placeholder="Type Last Name Here..."></input>
+    <input class="signUpInput" placeholder="Type Last Name Here..."required></input>
     </p>
     <p>
         <h3>New Email:</h3>
-    <input class="email" placeholder="Type Email Here..."></input>
+    <input class="signUpInput" placeholder="Type Email Here..." required></input>
     </p>
     <p>
         <h3>Create A New Password:</h3>
-    <input class="password" type="password" placeholder="Type New Password Here..."></input>
+    <input class="signUpInput" type="password" id="newPassword"
+     placeholder="Type New Password Here..."required></input>
     </p>
     <div>
         <h3>Confirm Your New Password:</h3>
-        <input class="password" type="password" placeholder="Confirm New Password Here..."></input>
-        <button type="submit" id="submitForm">Enter</button>
+        <input class="signUpInput" type="password" id="newPassword2"
+        placeholder="Confirm New Password Here..."required></input>
+        <button type="button" id="submitForm" onclick="signUpInputs()" >Enter</button>
     </div>
     <p>
-    <a href="./index.html" class="back" >Back</a>
+    <a href="./index.html" class="signIN" >SignIn</a>
     </p>
     <p>
         <h3>Password must contain the following:</h3>
